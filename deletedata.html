@@ -1,0 +1,18 @@
+<div style="background-color:#65c1f2;height:70%;width:60%;margin-left:20%;margin-top:5%;padding:5%">
+<h1 style="text-align:center">Information Delete</h1>
+<table>
+  <tr style="width:60%">
+    <th style="border:1px solid black;height:30px;width:15%">Index</th>
+    <th style="border:1px solid black;height:30px;width:30%;background-color:#d4beb9">Name</th>
+    <th style="border:1px solid black;height:30px;width:20%">Age</th>
+    <th style="border:1px solid black;width:35%;height:30px;background-color:#d4beb9">phone</th>
+  </tr>
+  <tr ng-repeat= "item in personalDataArray">
+    <td style="border:1px solid black;height:30px;width:15%"> {{ $index+1 }}.</td>
+    <td style="border:1px solid black;height:30px;width:30%;background-color:#d4beb9"> {{item.name}} </td>
+    <td style="border:1px solid black;height:30px;width:20%"> {{item.age}} </td>
+    <td style="border:1px solid black;width:35%;height:30px;background-color:#d4beb9">{{item.phone}}</td>
+    <td><button ng-click="deletee(item)">Delete</button></td>
+  </tr>
+</table>
+</div>

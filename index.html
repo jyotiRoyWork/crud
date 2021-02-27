@@ -1,0 +1,31 @@
+<html lang="en" dir="ltr">
+  <head>
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="crud.js"></script>
+
+    <title></title>
+  </head>
+  <body ng-app="crudApp" ng-controller="crudCtrl" style="background-color:#d4beb9">
+
+
+    <form style="width:70%;margin-left:20%;background-color:#1f6d97">
+      <h1 style="text-align:center">CRUD OPERATION</h1>
+      <div style="float:left;background-color:#65c1f2;height:700px;width:20%">
+        <div style="background-color:#a2aafa;height:60px;border:1px solid blue;text-align:center"><a href="#!home" style="text-decoration: none">HOME</a></div>
+        <div style="background-color:#a2aafa;height:60px;border:1px solid blue;text-align:center"><a href="#!insertion" style="text-decoration: none;">Insert Data</a></div>
+        <div style="background-color:#a2aafa;height:60px;border:1px solid blue;text-align:center"><a href="#!list" style="text-decoration: none;">list</a></div>
+        <div style="background-color:#a2aafa;height:60px;border:1px solid blue;text-align:center"><a href="#!deletedata" style="text-decoration: none;">Delete</a></div>
+        <div style="background-color:#a2aafa;height:60px;border:1px solid blue;text-align:center"><a href="#!update" style="text-decoration: none;">update</a></div>
+        <br>
+      </div>
+      <div style="float:right;background-color:#1f6d97;height:700px;width:80%">
+        <div ng-view></div>
+     </div>
+    </form>
+
+
+  </body>
+</html>
